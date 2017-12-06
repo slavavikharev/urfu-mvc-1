@@ -1,0 +1,9 @@
+﻿@model StudentViewModel
+
+@{
+    ViewData["Title"] = "Student";
+}
+
+<h2>Студент @Model.Student.FirstName @Model.Student.LastName</h2>
+
+<a href=@Url.Action("Students", "Students")>К списку</a>
